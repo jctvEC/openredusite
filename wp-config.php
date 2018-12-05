@@ -24,10 +24,10 @@
 define('DB_NAME', 'openredu_org');
 
 /** Usuário do banco de dados MySQL */
-define('DB_USER', 'openreduorg');
+define('DB_USER', 'root');
 
 /** Senha do banco de dados MySQL */
-define('DB_PASSWORD', 'orr3du2017');
+define('DB_PASSWORD', '');
 
 /** Nome do host do MySQL */
 define('DB_HOST', 'localhost');
