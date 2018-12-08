@@ -294,21 +294,16 @@ footer#contato div.central address.more div.textwidget{font-size: 0.9em}
  footer#contato div.central div.menu-principal-container ul li.menu-item-has-children ul li a{font-weight: 100}
 footer#contato section.copyright{background-color: #000;color: #fff;padding: 20px;font-size: 0.8em;text-align:center;}
 
-/*
------------------------------------------------------------------------------------------------------------------
-*/
-
-
-/* Conteúdo Community
-.category-design-community { background-color: blue;}
-*/
-
 
  /*Conteúdo community/Archive*/ 
 section#content-area.community {} 
+
 section#content-area.community header.blog-header{clear: both;} 
 section#content-area.community article.community{float: left; width: 20%; padding: 2% 3.5%; min-height: 480px; margin-left: 4.5% } 
-section#content-area.community article.community section.entry {}
+/*
+section#content-area.community article.community.communityAreas{ display: hidden}
+ section#content-area.community article.community#post641 {visibility: hidden}
+*/
 section#content-area.community article.community section.entry div.entry-content{padding: 0;}
 section#content-area.community article.community section.entry div.entry-content a { margin-top: 10px; text-align: center; color: #fff; background-color: #f35e00;display: block; border-radius: 2px; padding: 10px 15px; text-transform: uppercase;}
 section#content-area.community main:after {display: block; content:""; clear: both; }
@@ -317,5 +312,25 @@ section#content-area.community article.community header.entry-header {border-bot
 section#content-area.community article.community header.entry-header h1 {padding-top: 10px; padding-bottom: 10px; text-align: center; text-transform: uppercase;}
 section#content-area.community article.community#post-594{float: unset; width: 20%; padding: 2% 3.5%; min-height: 480px; } 
 section#content-area.community article.community#post-597{  margin-right: 500px; float: right; width: 20%; padding: 0 3.5%; min-height: 480px; }/*nao tava ficando corretamento por ser 5 elementos ai numero fica quebrado, tem que colocar os elementos pra float na linha */
+ 
 
 
+/*Conteúdo communityAreas/Archive*/ 
+/*Conteúdo design-communityAreas/Archive*/ 
+section#content-area.design-community {} 
+
+section#content-area.design-community header.blog-header{clear: both;} 
+section#content-area.design-community article.design-community{float: none; width: 60%; padding: 2% 3.5%; min-height: 480px; margin-left: 4.5% } 
+
+/*section#content-area.design-community article.design-community.design-communityAreas{ display: hidden}
+ section#content-area.design-community article.design-community#post641 {visibility: hidden}
+*/
+ section#content-area.design-community article.design-community section.entry div.entry-content{padding: 0; text-align: justify}
+section#content-area.design-community article.design-community section.entry div.entry-content a { margin-top: 10px; text-align: justify; color: #fff; background-color: #f35e00;display: block; border-radius: 2px; padding: 10px 15px; text-transform: uppercase;}
+section#content-area.design-community main:after {display: block; content:""; clear: both; }
+section#content-area.design-community article.design-community header.entry-header  {}
+section#content-area.design-community article.design-community header.entry-header {border-bottom-width: 10px}
+section#content-area.design-community article.design-community header.entry-header h1 {padding-top: 10px; padding-bottom: 10px; text-align: justify; text-transform: uppercase;}
+section#content-area.design-community article.design-community header.entry-content {border-bottom: 1px solid #eee;margin-bottom: 40pxs}
+
+section#content-area.design-community article.design-community section.entry div.entry-content h4 {margin: 2% 0 }

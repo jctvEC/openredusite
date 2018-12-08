@@ -1,3 +1,5 @@
+
+
 <?php
 
 
@@ -17,7 +19,6 @@ get_header(); ?>
 			</section >
 
 
-
 			<header class="blog-header">
 				<h1 class="blog-title"> <?= get_the_category()[0]->name;?></h1>
 			</header>    <!-- .page-header -->  
@@ -27,6 +28,7 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : 
 			$first = true;
+				
 			// Start the Loop.
 			while ( have_posts() ) : the_post();
 
@@ -36,18 +38,50 @@ get_header(); ?>
 				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 				 */		
 
+
 			switch (get_the_category()[0]->slug){
-				case 'community':{get_template_part('content-community', get_post_format());break;}	
-				case 'blog':{get_template_part($first == true ?'content-blog-first':'content-blog', get_post_format());break;}
-									
+			
+				case 'blog':{get_template_part($first == true ?'content-blog-first':'content-blog', get_post_format()); break;}
+
+				
+
+
+				case 'community':{get_template_part('content-community', get_post_format());
+					//print_r("Entrou em comunidade"); 
+					break;}	
+				
+				case 'design-community':{get_template_part('content-community-areas', get_post_format());
+					print_r("Entrou em design");
+					 break;}
+				
+
+
+
+				case 'development-community':{get_template_part('content-community-areas', get_post_format());break;}						
+				case 'communication-community':{get_template_part('content-community-areas', get_post_format());break;}						
+				case 'education-community':{get_template_part('content-community-areas', get_post_format());break;}						
+				case 'supporter-community':{get_template_part('content-community-areas', get_post_format());break;}						
+
+
 				default:{get_template_part($first == true ?'content-extra-first':'content-extra', get_post_format());break;}
 			}
-		if($first && (get_the_category()[0]->slug != 'community') ){?>
+	
+		
+	
+		//tem que tirar o div post area de todos as paginas. Caso nao o primiero post terá formatacao diferente dos
+		if($first && (get_the_category()[0]->slug != 'community'
+		 &&  get_the_category()[0]->slug != 'design-community'
+		 &&  get_the_category()[0]->slug != 'education-community'
+		 &&  get_the_category()[0]->slug != 'development-community'
+		 &&  get_the_category()[0]->slug != 'communication-community'
+		 &&  get_the_category()[0]->slug != 'supporter-community'
+		 
+		 )){?>
 
 
 
 
-		<div id="posts-area">
+		<div id="posts-area">			
 			<section class="posts">
 					<?php }
 					$first = false;
