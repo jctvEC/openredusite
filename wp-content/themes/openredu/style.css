@@ -307,30 +307,15 @@ footer#contato section.copyright{background-color: #000;color: #fff;padding: 20p
  /*Conteúdo community/Archive*/ 
 section#content-area.community {} 
 section#content-area.community header.blog-header{clear: both;} 
-section#content-area.community article.community{float: left; width: 20%; padding: 0 2.5%; min-height: 520px; } 
+section#content-area.community article.community{float: left; width: 20%; padding: 2% 3.5%; min-height: 480px; margin-left: 4.5% } 
 section#content-area.community article.community section.entry {}
 section#content-area.community article.community section.entry div.entry-content{padding: 0;}
-section#content-area.community article.community section.entry div.entry-content a {text-align: center; color: #fff; background-color: #f35e00;display: block; border-radius: 2px; padding: 10px 15px; text-transform: uppercase;}
+section#content-area.community article.community section.entry div.entry-content a { margin-top: 10px; text-align: center; color: #fff; background-color: #f35e00;display: block; border-radius: 2px; padding: 10px 15px; text-transform: uppercase;}
 section#content-area.community main:after {display: block; content:""; clear: both; }
+section#content-area.community article.community header.entry-header  {}
+section#content-area.community article.community header.entry-header {border-bottom-width: 10px}
+section#content-area.community article.community header.entry-header h1 {padding-top: 10px; padding-bottom: 10px; text-align: center; text-transform: uppercase;}
+section#content-area.community article.community#post-594{float: unset; width: 20%; padding: 2% 3.5%; min-height: 480px; } 
+section#content-area.community article.community#post-597{  margin-right: 500px; float: right; width: 20%; padding: 0 3.5%; min-height: 480px; }/*nao tava ficando corretamento por ser 5 elementos ai numero fica quebrado, tem que colocar os elementos pra float na linha */
 
 
-/*
-section#content-area header.community-header h1.community-title{font-size: 2em;padding: 10px}
-section#content-area #posts-area{padding: 20px 0}
-section#content-area.community #posts-area{padding: 20px 0;border-bottom: 1px solid #eee}
-section#content-area.colabore article.first.post section.entry div.entry-content{padding:20px}
-section#content-area #posts-area article.post{padding-bottom: 40px}
-section#content-area #posts-area article.post ul{padding-left: 30px}
-section#content-area #posts-area article.post header.entry-header{padding-bottom: 15px}
-section#content-area #posts-area article.post header.entry-header a{display: block}
-section#content-area #posts-area article.post header.entry-header h2 a. section#content-area #posts-area article.post .entry-content{padding: 10px 20px}
-section#content-area #posts-area article.post header.entry-header a img, section#content-area article.post header.entry-header img{width: 100%;height: auto}
-section#content-area #posts-area article.post header.entry-header{padding-bottom: 15px}
-section#content-area.colabore #posts-area article.post:nth-child(odd){background-color: #f5f5f5}
-section#content-area article.community.post header.entry-header h2.sub-title, section#content-single.community article.post header.entry-header h1.title{padding: 20px 0 5px}
-section#content-area article.community.post .entry-content{}
-section#content-area article.community.post .meta-area, section#content-single.community article.post header.entry-header .meta-area{padding:5px 0;font-size: 0.8em;color: #ccc}
-section#content-area.community article.community.post .entry-content{border-bottom: 1px solid #eee;margin-bottom: 40px}
-section#content-area article.community.post .entry-content a.more-link{display: inline-block;padding: 5px 10px;background-color: #eee;color: #666;margin: 5px 0;clear:both;font-size: 0.8em;border-radius: 2px;-webkit-border-radius: 2px;-moz-border-radius: 2px;-o-border-radius: 2px;-ms-border-radius: 2px;}
-section#content-area article.community.post .entry-content a.more-link:hover{background-color: #ccc;color: #f5f5f5}
-*/
